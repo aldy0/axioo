@@ -30,35 +30,29 @@
             </div>   
             </nav>
      <!-- akhir navbar-->
+      
      <br><br><br><br>
-<div class="container">
-<div class="row">
-        <div class="col-md-6">
-
-
+     <div class="container">
+     <div class="row">
+     <div class="col-md-6">
+         
         <form action="proses.php" method="POST">
-
             <div class="form-grup"  >
                 <lebel for="username" >Username</lebel>
                 <input class="form-control" type="text" name="username" placeholder="username"/>
             </div>
-
             <div class="form-grup">
                 <lebel for="password">Password</lebel>
                 <input class="form-control" type="text" placeholder="password" name="password"/>
             </div>
-
             <div class="form-grup">
                 <lebel for="level">Level</lebel>
                 <input class="form-control" type="text" name="level" placeholder="level"/>
             </div>
-
             
             <br>
             <input type="submit" class="btn btn-success btn-block" name="tambah" value="selesai"></input>
-
         </form>
-
      
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
