@@ -25,12 +25,9 @@
      <form action="cek_login.php" method="post">
          <label>Username</label>
          <input type="text" name="username" class="form_login" placeholder="Username .." required="required">
-
          <label>Password</label>
          <input type="password" name="password" class="form_login" placeholder="Password .." required="required">
-
          <input type="submit" class="tombol_login" value="LOGIN">
-
          <br/>
          <br/>
          <center>
@@ -38,14 +35,13 @@
              Untuk Pebuatan akun Silahkan Hubungi Email
              <a href="mailto:aldi33546@gmail.com">"aldi33546@gmail.com"</a>
          </center>
-     </form>
-     
+     </form>     
  </div>
-                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                <script src="js/jquery.min.js"></script>
-                <script src="js/jquery.easing.1.3.js"></script>
-                <!-- Include all compiled plugins (below), or include individual files as needed -->
-                <script src="js/bootstrap.min.js"></script>
+             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+             <script src="js/jquery.min.js"></script>
+             <script src="js/jquery.easing.1.3.js"></script>
+             <!-- Include all compiled plugins (below), or include individual files as needed -->
+             <script src="js/bootstrap.min.js"></script>
     
 </body>
 </html>
