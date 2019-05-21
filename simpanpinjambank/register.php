@@ -113,23 +113,23 @@
         <form action="" method="POST">
             <div class="form-grup"  >
                 <lebel for="name" >Nama lengkap</lebel>
-                <input class="form-control" type="text" name="name" placeholder="Nama Kamu"/>
+                <input class="form-control" type="text" name="name" placeholder="Nama Kamu" required="required"/>
             </div>
             <div class="form-grup">
                 <lebel for="alamat lengkap">Alamat lengkap</lebel>
-                <input class="form-control" type="text" placeholder="alamat lengkap" name="alamat_lengkap"/>
+                <input class="form-control" type="text" placeholder="alamat lengkap" name="alamat_lengkap" required="required"/>
             </div>
             <div class="form-grup">
                 <lebel for="email">Email</lebel>
-                <input class="form-control" type="text" name="email" placeholder="email"/>
+                <input class="form-control" type="text" name="email" placeholder="email" required="required"/>
             </div>
             <div class="form-grup">
                 <lebel for="jumlah pinjaman">Jumlah pinjaman</lebel>
-                <input class="form-control" type="text" name="jumlah_pinjaman" placeholder="jumlah pinjaman"/>
+                <input class="form-control" type="text" name="jumlah_pinjaman" placeholder="jumlah pinjaman" required="required"/>
             </div>
             <br>
             <div>
-                <select class="form-control" name="masa_pinjaman">
+                <select class="form-control" name="masa_pinjaman" required="required">
                 <option>--Masa pinjaman --</option>
                 <option value="1 Bulan">1 Bulan</option>
                 <option value="3 Bulan">3 Bulan</option>
@@ -141,13 +141,13 @@
 		
         <div class="form-grup">
            <lebel for="Penhasilan Perbulan">Penghasilan Perbulan</lebel>
-             <input class="form-control" type="text" name="Penghasilan_Perbulan" placeholder="Penhasilan Perbulan"/>
+             <input class="form-control" type="text" name="Penghasilan_Perbulan" placeholder="Penhasilan Perbulan" required="required"/>
             </div>
             </div>
             <div class="col-md-6">
             <br>
             <div>
-                <select class="form-control" name="Pekerjaan">
+                <select class="form-control" name="Pekerjaan" required="required">
                 <option>--Pekerjaan --</option>
                 <option value="Pegawai Swasta">Pegawai Swasta</option>
                 <option value="Pegawai Negri">Pegawai Negri</option>
@@ -158,19 +158,19 @@
             </div>
              <div class="form-grup">
                 <lebel for="Provinsi">Provinsi</lebel>
-                <input class="form-control" type="text" name="Provinsi" placeholder="Provinsi"/>
+                <input class="form-control" type="text" name="Provinsi" placeholder="Provinsi" required="required"/>
             </div>
             <div class="form-grup">
                 <lebel for="Kota">Kota</lebel>
-                <input class="form-control" type="text" name="Kota" placeholder="Kota"/>
+                <input class="form-control" type="text" name="Kota" placeholder="Kota" required="required"/>
             </div>
             <div class="form-grup">
                 <lebel for="Umur">Umur</lebel>
-                <input class="form-control" type="text" name="Umur" placeholder="Umur"/>
+                <input class="form-control" type="text" name="Umur" placeholder="Umur" required="required"/>
             </div>
             <br>
             <div>
-                <select class="form-control" name="jenis_kelamin">
+                <select class="form-control" name="jenis_kelamin" required="required">
                 <option>--Jenis Kelamin --</option>
                 <option value="Laki-Laki">Laki-Laki</option>
                 <option value="Perempuan">Perempuan</option>
