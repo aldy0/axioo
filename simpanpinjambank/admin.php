@@ -43,8 +43,8 @@
             </nav>
      <!-- akhir navbar-->
 		
-<br><br><br><br>
-<div class="container">
+    <br><br><br><br>
+    <div class="container">
     <div class="row">
         <div class="col-md-4"> 
         <h3>Jumlah Uang Bank</h3>
@@ -118,19 +118,14 @@
             <td><button>
             <a href="edit-pinjaman.php?id=<?php echo $data['id']; ?>">EDIT</a></button>
             <button><a href="delet-pinjaman.php?id=<?php echo $data['id']; ?>">DELETE</a></button>
-            </td>
-            
-           
+            </td>  
         </tr>
+	    
         <?php } 
         ?>
-
+	    
     </table>
-    
- 
-
-    
-  
+   
     <h3>Data User</h3>
 	<button><a href="tambah.php">+ TAMBAH USER</a></button><br><br>
     <table class="table table-bordered" border="1">
