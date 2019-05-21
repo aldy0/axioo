@@ -29,22 +29,23 @@ $data = mysqli_query($db, $query);
    
             </nav>
      <!-- akhir navbar-->
-     <br><br><br><br>
-     <div class="container">
+         
+    <br><br><br><br>
+    <div class="container">
     <h3>Tambah Saldo Bank</h3>
     <?php while($row = mysqli_fetch_assoc($data)){ ?>
     <form action="proses-update-bank.php" method="post">
         Jumlah Uang : <input type="text" name="jumlah_uang" value="<?php echo $row['jumlah_uang']; ?>"><br><br>
-
-        
-        
+      
         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
         <input type="submit" name="submit" value="Update Data">
     </form>
     </div>
+         
     <?php
     } // end while
 
     ?>
+         
 </body>
 </html>
