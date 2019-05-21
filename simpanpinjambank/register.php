@@ -30,19 +30,19 @@
         
         $jumlah_uang = mysqli_fetch_assoc(mysqli_query($db, "SELECT jumlah_uang FROM bank"))['jumlah_uang'] - $jumlah_pinjaman;
         $query = "INSERT INTO user VALUES('','$Nama',
-                                                        '$alamat_lengkap',
-                                                        '$email',
-                                                        $jumlahpinjaman,
-                                                         '$masa_pinjaman',
-                                                         $Penghasilan_Perbulan,
-                                                         '$Pekerjaan',
-                                                         '$Provinsi',
-                                                         '$Kota',
-                                                         $Umur,
-                                                         '$jenis_kelamin')";
+                                                     '$alamat_lengkap',
+                                                     '$email',
+                                                      $jumlahpinjaman,
+                                                     '$masa_pinjaman',
+                                                      $Penghasilan_Perbulan,
+                                                     '$Pekerjaan',
+                                                     '$Provinsi',
+                                                     '$Kota',
+                                                      $Umur,
+                                                     '$jenis_kelamin')";
         $q = mysqli_query($db, $query);
         $query = "UPDATE bank SET jumlah_uang = $jumlah_uang";
-         $q = mysqli_query($db, $query);
+        $q = mysqli_query($db, $query);
         if ($q) : ?>
             <script>
                 alert('Peminjaman Berhasil dikonfirmasi untuk proses selanjutnya silahkan cek Email!');
@@ -94,46 +94,35 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                 <li><a href="logout.php">Logout</a></li>
-
-                </ul>
-                            
+                </ul>               
             </div>
-
-
-            </div>
+	    </div>
             </nav>
-<br><br>
-<div class="container mt-5">
-    <div class="row">
-        <div class="col">
+	
+	<br><br>
+	<div class="container mt-5">
+	<div class="row">
+	<div class="col">
+	   <h3>Silahkan isi data di bawah ini...</h3>
+	   <h5>Untuk melakukan peminjaman<h5>
+	</div>
+	</div>
 
-            <h3>Silahkan isi data di bawah ini...</h3>
-            <h5>Untuk melakukan peminjaman<h5>
-            
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-
-
+	<div class="row">
+	<div class="col-md-6">
         <form action="" method="POST">
-
             <div class="form-grup"  >
                 <lebel for="name" >Nama lengkap</lebel>
                 <input class="form-control" type="text" name="name" placeholder="Nama Kamu"/>
             </div>
-
             <div class="form-grup">
                 <lebel for="alamat lengkap">Alamat lengkap</lebel>
                 <input class="form-control" type="text" placeholder="alamat lengkap" name="alamat_lengkap"/>
             </div>
-
             <div class="form-grup">
                 <lebel for="email">Email</lebel>
                 <input class="form-control" type="text" name="email" placeholder="email"/>
             </div>
-
-
             <div class="form-grup">
                 <lebel for="jumlah pinjaman">Jumlah pinjaman</lebel>
                 <input class="form-control" type="text" name="jumlah_pinjaman" placeholder="jumlah pinjaman"/>
@@ -149,13 +138,13 @@
                 <option value="1 Tahun">1 Tahun</option>
             </select> 
             </div>
-             <div class="form-grup">
-                <lebel for="Penhasilan Perbulan">Penghasilan Perbulan</lebel>
-                <input class="form-control" type="text" name="Penghasilan_Perbulan" placeholder="Penhasilan Perbulan"/>
+		
+        <div class="form-grup">
+           <lebel for="Penhasilan Perbulan">Penghasilan Perbulan</lebel>
+             <input class="form-control" type="text" name="Penghasilan_Perbulan" placeholder="Penhasilan Perbulan"/>
             </div>
-        </div>
-        <div class="col-md-6">
-
+            </div>
+            <div class="col-md-6">
             <br>
             <div>
                 <select class="form-control" name="Pekerjaan">
@@ -171,12 +160,10 @@
                 <lebel for="Provinsi">Provinsi</lebel>
                 <input class="form-control" type="text" name="Provinsi" placeholder="Provinsi"/>
             </div>
-
             <div class="form-grup">
                 <lebel for="Kota">Kota</lebel>
                 <input class="form-control" type="text" name="Kota" placeholder="Kota"/>
             </div>
-
             <div class="form-grup">
                 <lebel for="Umur">Umur</lebel>
                 <input class="form-control" type="text" name="Umur" placeholder="Umur"/>
@@ -189,26 +176,13 @@
                 <option value="Perempuan">Perempuan</option>
             </select> 
             </div>
-
-
-
-
             <br>
             <input type="submit" class="btn btn-success btn-block" name="Register" value="selesai"></input>
-
-        </form>
-
-       
-
+	</form>
     </div>
-</div>
+</div>   
         
-        
-        
-    	
-
-
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
