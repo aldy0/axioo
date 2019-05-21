@@ -16,7 +16,7 @@ $data = mysqli_query($db, $query);
 <body>
 
     <!-- navbar -->
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+     <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -26,9 +26,8 @@ $data = mysqli_query($db, $query);
                 <span class="icon-bar"></span>
                 </button>
                 <a href="admin.php" class="navbar-brand page-scroll">Update User</a>
-            </div>
-   
-            </nav>
+           </div>
+     </nav>
      <!-- akhir navbar-->
          
     <br><br><br><br>
