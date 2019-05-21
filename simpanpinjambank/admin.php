@@ -4,9 +4,10 @@
 <html>
 <head>
 	<title>Dashbord Admin</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/7.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="img/7.png">
 </head>
+	
 <body>
     <?php 
     session_start();
@@ -15,7 +16,7 @@
     if($_SESSION['level']==""){
         header("location:index.php?pesan=gagal");
     }
- 
+	
     ?>
 	
      <!-- navbar -->
@@ -41,6 +42,7 @@
             </div>   
             </nav>
      <!-- akhir navbar-->
+		
 <br><br><br><br>
 <div class="container">
     <div class="row">
@@ -160,20 +162,13 @@
 
     </table>
     </div><br><br>
-    
-     
-     
-
-
-            
-          
-
+   
 
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
      <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
  
 	
 </body>
